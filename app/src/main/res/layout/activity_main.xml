@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -32,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageView"
         android:background="#00FFFFFF"
-        app:icon="@android:drawable/ic_menu_more"
+        app:icon="@drawable/download1"
         app:iconTint="#FFFFFF" />
 
     <Button
@@ -42,7 +45,7 @@
         android:layout_alignRight="@+id/imageView"
         android:layout_alignParentRight="true"
         android:background="#00FFFFFF"
-        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:icon="@drawable/mas1"
         app:iconTint="#FFFFFF" />
 
     <ImageView
@@ -150,7 +153,7 @@
         android:layout_below="@id/textView5"
         android:layout_toLeftOf="@id/button3"
         android:background="#00FFFFFF"
-        app:icon="@android:drawable/ic_media_previous"
+        app:icon="@drawable/previous_track"
         app:iconTint="#FFFFFF" />
 
     <Button
@@ -160,28 +163,29 @@
         android:layout_below="@id/textView5"
         android:layout_toRightOf="@id/button3"
         android:background="#00FFFFFF"
-        app:icon="@android:drawable/ic_media_next"
+        app:icon="@drawable/next"
         app:iconTint="#FFFFFF" />
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="124dp"
         android:layout_below="@id/button5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
         android:background="#00FFFFFF"
-        app:icon="@android:drawable/ic_popup_disk_full"
+        app:icon="@drawable/devices"
         app:iconTint="#FFFFFF" />
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="124dp"
         android:layout_below="@id/button4"
         android:layout_alignParentRight="true"
-        android:background="#00FFFFFF"
         android:layout_alignParentBottom="true"
-        app:icon="?android:attr/actionModeFindDrawable"
+        android:background="#00FFFFFF"
+        app:icon="@drawable/video_playlist"
         app:iconTint="#FFFFFF" />
 </RelativeLayout>
