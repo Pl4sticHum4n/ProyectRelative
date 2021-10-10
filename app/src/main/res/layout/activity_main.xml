@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="REPRODUCIENDO DESDE PLAYLIST"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Young Radio"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_menu_more"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:iconTint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="355dp"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:srcCompat="@drawable/_200x1200bf_60" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4dp"
+        android:text="A Dream of You"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:text="Far Caspian"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:background="#00FFFFFF"
+        android:layout_alignParentRight="true"
+        app:icon="@android:drawable/star_off"
+        app:iconTint="#FFFFFF" />
+
+    <SeekBar
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_below="@id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:text="0:00"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView4"
+        android:text="4:18"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        app:icon="@drawable/play_button"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_popup_sync"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_alignParentLeft="true"
+        android:background="#00FFFFFF"
+        app:icon="@drawable/shuffle_arrows"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_toLeftOf="@id/button3"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_previous"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView5"
+        android:layout_toRightOf="@id/button3"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_media_next"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#00FFFFFF"
+        app:icon="@android:drawable/ic_popup_disk_full"
+        app:iconTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:layout_alignParentBottom="true"
+        app:icon="?android:attr/actionModeFindDrawable"
+        app:iconTint="#FFFFFF" />
+</RelativeLayout>
